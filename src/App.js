@@ -110,7 +110,7 @@ function App() {
                 <img src={logo} alt="logo buttmkp" />
                 <div className="font-bold">BUTTMKP</div>
               </div>
-              <div className="flex space-x-7 items-center font-medium">
+              <div className="flex space-x-2 lg:space-x-2 xl:space-x-2 2xl:space-x-7 items-center font-medium">
                 <div className="text-green-primary font-bold">Beranda</div>
                 <div className="flex items-center space-x-2">
                   <div>Tentang Kami</div>
@@ -164,13 +164,13 @@ function App() {
       {/* End Navbar */}
 
       {/* Section 1 */}
-      <div className="px-20 bg-green-primary text-white" id="section 1">
+      <div className="px-20 py-0 xl:py-10 2xl:pt-0 bg-green-primary text-white" id="section 1">
         <div className="flex justify-center items-center">
           <div className="space-y-4 w-4/6">
               <div className="font-bold text-lg">
                 Perancangan
               </div>
-              <div className="text-5xl font-bold">
+              <div className="text-4xl 2xl:text-5xl font-bold">
               Pembangunan Zona Integritas
               </div>
               <div className="w-4/6">
@@ -192,7 +192,7 @@ function App() {
               </div>
           </div>
           <div className="relative w-2/6">
-            <img className="relative z-10 select-none" src={people} alt="" />
+            <img className="relative z-10 -bottom-0 lg:-bottom-10 select-none" src={people} alt="" />
             <div className="absolute right-8 top-1/4 z-0">
               <div className="w-[32rem] h-[32rem] bg-yellow-400 rounded-full"></div>
             </div>
@@ -672,7 +672,7 @@ function App() {
 
       {/* Section 10 */}
       <div className="bg-green-primary">
-        <div className="px-10 py-20 flex justify-evenly text-white">
+        <div className="px-16 2xl:px-10 py-20 flex justify-evenly text-white">
           <div className="w-4/12 text-sm">
             <div className="">
               <div className="flex space-x-4 items-center ">
