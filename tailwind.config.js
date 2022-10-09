@@ -10,8 +10,17 @@ module.exports = {
       },
       colors: {
         'green-primary': "#0D7842",
-      }
+      },
+      backgroundImage: theme => ({
+        'container': "url('/src/images/ilustrasi/Container.png')",
+       }),
     },
   },
-  plugins: [],
+  corePlugins: {
+    aspectRatio: false,
+  },
+  plugins: [
+    require('@tailwindcss/aspect-ratio'),
+    
+  ],
 }
