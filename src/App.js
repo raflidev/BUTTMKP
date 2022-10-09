@@ -23,6 +23,81 @@ import cover1 from "./images/cover1.png";
 import berita1 from "./images/berita1.png";
 import berita2 from "./images/berita2.png";
 
+// section 10
+import wa from "./images/icons/wa.svg"
+import indonesia2 from "./images/icons/indonesia2.png";
+
+
+import DataTable from 'react-data-table-component';
+
+const columns = [
+    {
+        name: 'Nama Acara',
+        selector: row => row.name,
+        sortable: true,
+    },
+    {
+        name: 'Deskripsi Acara',
+        selector: row => row.desc,
+        sortable: true,
+    },
+    {
+        name: 'Tanggal',
+        selector: row => row.date,
+        sortable: true,
+    },
+    {
+        name: 'Status',
+        selector: row => row.status,
+        sortable: true,
+    },
+];
+
+const data = [
+    {
+        id: 1,
+        name: 'Makan Makan',
+        desc: 'test123123',
+        date: '13 Januari 2022',
+        status: 'Sudah Selesai',
+    },
+    {
+        id: 1,
+        name: 'Makan Makan 2',
+        desc: 'test123123',
+        date: '13 Juli 2022',
+        status: 'Sudah Selesai',
+    },
+    {
+        id: 1,
+        name: 'Makan Makan 3',
+        desc: 'test123123',
+        date: '20 Februari 2022',
+        status: 'Sudah Selesai',
+    },
+    {
+        id: 1,
+        name: 'Makan Makan 4',
+        desc: 'test123123',
+        date: '14 Juli 2022',
+        status: 'Sudah Selesai',
+    },
+    {
+        id: 1,
+        name: 'Makan Makan 5',
+        desc: 'test123123',
+        date: '15 Juni 2022',
+        status: 'Sudah Selesai',
+    },
+    {
+        id: 1,
+        name: 'Makan Makan 6',
+        desc: 'test123123',
+        date: '14 Mei 2022',
+        status: 'Belum Selesai',
+    },
+]
+
 function App() {
   return (
     <div className="min-h-screen font-montserrat">
@@ -130,13 +205,29 @@ function App() {
       <div className="px-20 pt-10 relative z-10 bg-white">
         <div>
           <div className="font-semibold">Tentang</div>
-          <div className="font-bold text-3xl text-green-primary">
-          Apa Itu Balai Uji Teknik dan Metode Karantina?
-          </div>
-          <div className="h-1 w-10 bg-yellow-400 mt-4">
+            <div className="font-bold text-3xl text-green-primary">
+            Apa Itu Balai Uji Teknik dan Metode Karantina?
+            </div>
+            <div className="h-1 w-10 bg-yellow-400 mt-4"></div>
+            <div className=" mt-4">
+              <div className="space-y-3">
+                <div className="aspect-w-16 aspect-h-3 rounded-lg">
+                  <iframe className="rounded-lg" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+                <button className="flex space-x-2 items-center px-5 py-3 bg-green-primary text-sm rounded-full font-semibold text-white">
+                <span>
+                  Lebih Detail
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
       {/* End Section 2 */}
 
       {/* Section 3 */}
@@ -552,6 +643,165 @@ function App() {
         </div>
       </div>
       {/* End Section 8 */}
+
+      {/* section 9 */}
+      <div className="px-20 py-20">
+        <div className="flex justify-center">
+            <div className="w-5/6">
+              <div className="">
+                <div className="space-y-2 text-center">
+                  <div className="font-bold">Agenda</div>
+                  <div className="font-bold text-green-primary text-3xl pb-5">Agenda Kegiatan</div>
+                  <div className="mx-auto h-1 w-16 bg-yellow-400"></div>
+                </div>
+                <DataTable
+                      columns={columns}
+                      data={data}
+                      fixedHeader
+                      fixedHeaderScrollHeight="300px"
+                      
+                      pagination
+                      responsive
+                      subHeaderWrap
+                  />
+              </div>
+            </div>
+          </div>
+      </div>
+      {/* End section 9 */}
+
+      {/* Section 10 */}
+      <div className="bg-green-primary">
+        <div className="px-10 py-20 flex justify-evenly text-white">
+          <div className="w-4/12 text-sm">
+            <div className="">
+              <div className="flex space-x-4 items-center ">
+                <img src={logo} alt="" />
+                <div className="font-bold">BUTTMKP</div>
+              </div>
+              <p className="pt-5">Balai Uji Terap Teknik dan Metode Karantina Pertanian</p>
+              
+              <div className="space-y-3 pt-8">
+                <div>
+                  <div className="flex space-x-2 items-center">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+                      </svg>
+                    </div>
+                    <p>JL Dayeuhkolot bekasi RT01/RW02 Kec. Baleendah</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="flex space-x-2 items-center">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                      </svg>
+                    </div>
+                    <p>0892131232312213123</p>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex space-x-2 items-center">
+                    <div>
+                      <img src={wa} alt="" srcset="" />
+                    </div>
+                    <p>092138823921212121</p>
+                  </div>
+                </div>
+
+                <div>
+                  <div className="flex space-x-2 items-center">
+                    <div>
+                      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                    </div>
+                    <p>092138823921212121</p>
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </div>
+          <div className="w-1/12 text-sm">
+            <div>
+              <div className="font-bold text-lg">Konten</div>
+              <div className="space-y-3 pt-4">
+                <div>Tentang</div>
+                <div>Berita</div>
+                <div>Alur Pelayanan</div>
+                <div>Lokasi</div>
+                <div>Kontak</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-4/12 text-sm">
+            <div className="font-bold text-lg pb-4">Statistik Pengunjung</div>
+            <div className="grid grid-cols-3 gap-3">
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+              <div className="flex space-x-3 items-center">
+                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <div>Visitor: 28.900</div>
+              </div>
+            </div>
+          </div>
+          <div className="w-2/12 text-sm">
+            <div className="space-y-4">
+              <div className="font-bold text-lg">Tentang</div>
+              <div>
+                <p className="">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+              </div>
+              <div>Email</div>
+              <div>
+                <div className="flex">
+                  <input className="px-3 py-2 rounded-l-full" type="email" name="email" id="" />
+                  <button className="px-3 py-2 rounded-r-full bg-yellow-400 text-center items-center text-green-primary font-bold">Submit</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-green-600 text-sm text-white py-3">
+        <div className="text-center font-bold">&copy; Copyright BUTTMKP 2020</div>
+      </div>
+      {/* End Section 10 */}
     </div>
   );
 }
