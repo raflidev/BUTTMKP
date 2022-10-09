@@ -19,6 +19,10 @@ import maybank from "./images/bank/maybank.png";
 // section 6
 import cover1 from "./images/cover1.png";
 
+// section 7
+import berita1 from "./images/berita1.png";
+import berita2 from "./images/berita2.png";
+
 function App() {
   return (
     <div className="min-h-screen font-montserrat">
@@ -285,7 +289,7 @@ function App() {
       </div> */}
 
       {/* Section 5 */}
-      <div className="px-20 py-10">
+      <div className="px-20 py-28">
         <div className="flex justify-center">
           <div className="text-center space-y-6">
             <div className="font-semibold">Inovasi</div>
@@ -368,6 +372,186 @@ function App() {
         </div>
       </div>
       {/* End Section 6 */}
+
+      {/* Section 7 */}
+      <div className="px-20 py-20">
+        <div className="flex justify-center">
+          <div className="w-5/6">
+            <div className="">
+              <div className="space-y-2 text-center">
+                <div className="font-bold">Berita</div>
+                <div className="font-bold text-green-primary text-3xl pb-5">Berita Terbaru Setiap Harinya</div>
+                <div className="mx-auto h-1 w-16 bg-yellow-400"></div>
+              </div>
+              <div className="pt-10">
+                <div className="grid grid-cols-3 gap-8">
+                  <div className=" col-span-3">
+                    <div>
+                      <img src={berita1} alt="" />
+                      <div>
+                        <div className="flex justify-between items-center">
+                          <div className="w-5/6">
+                            <h2 className="font-bold text-xl">Penilaian Pembangunan Zona Integritas Menuju Wilayah Bebas dari Korupsi (WBK) dan Wilayah Birokrasi Bersih Melayani (WBBM) di lingkungan Kementrian Pertanian</h2>
+                          </div>
+                          <div className="w-1/6 text-right">
+                            <p className="font-bold">01/12/2022</p>
+                          </div>
+                        </div>
+                          <p className="text-sm">Dalam rangka penilaian pembangunan Zona Integritas Menuju Wilayah Bebas dari Korupsi (WBK) dan Wilayah Birokrasi Bersih...</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div>
+                      <img src={berita2} alt="" />
+                      <div className="pt-5">
+                        <div className="flex-row justify-between items-center space-y-3">
+                          <div className="">
+                            <h2 className="font-bold">Tingkatkan Harga Jual Jahe, Pemkab Bekasi Datangkan Eksportir</h2>
+                          </div>
+                          <div className="">
+                            <p className="text-sm">01/12/2022</p>
+                          </div>
+                          <p className="txt-sm">Pemerintah Kabupaten Bekasi akan mendatangkan eksportir yang bisa menjual hasil budi daya petani.</p>
+                          <button className="bg-green-primary px-6 py-2 rounded-full text-white font-semibold text-sm">Baca Berita</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div>
+                      <img src={berita2} alt="" />
+                      <div className="pt-5">
+                        <div className="flex-row justify-between items-center space-y-3">
+                          <div className="">
+                            <h2 className="font-bold">Tingkatkan Harga Jual Jahe, Pemkab Bekasi Datangkan Eksportir</h2>
+                          </div>
+                          <div className="">
+                            <p className="text-sm">01/12/2022</p>
+                          </div>
+                          <p className="txt-sm">Pemerintah Kabupaten Bekasi akan mendatangkan eksportir yang bisa menjual hasil budi daya petani.</p>
+                          <button className="bg-green-primary px-6 py-2 rounded-full text-white font-semibold text-sm">Baca Berita</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="">
+                    <div>
+                      <img src={berita2} alt="" />
+                      <div className="pt-5">
+                        <div className="flex-row justify-between items-center space-y-3">
+                          <div className="">
+                            <h2 className="font-bold">Tingkatkan Harga Jual Jahe, Pemkab Bekasi Datangkan Eksportir</h2>
+                          </div>
+                          <div className="">
+                            <p className="text-sm">01/12/2022</p>
+                          </div>
+                          <p className="txt-sm">Pemerintah Kabupaten Bekasi akan mendatangkan eksportir yang bisa menjual hasil budi daya petani.</p>
+                          <button className="bg-green-primary px-6 py-2 rounded-full text-white font-semibold text-sm">Baca Berita</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      {/* End Section 7 */}
+
+      {/* Section 8 */}
+      <div className="bg-green-primary">
+        <div className="px-20 py-20">
+          <div className="flex justify-center">
+            <div className="w-5/6">
+              <div className="">
+                <div className="space-y-2 text-center">
+                  <div className="font-bold text-yellow-400">Video</div>
+                  <div className="font-bold text-white text-3xl pb-5">Berita Terbaru Setiap Harinya</div>
+                  <div className="mx-auto h-1 w-16 bg-yellow-400"></div>
+                </div>
+                <div className="pt-8">
+                  <div className="grid grid-cols-3 gap-8">
+                    <div className="bg-white rounded-xl drop-shadow-xl">
+                      <div className="">
+                        <div className="rounded-xl">
+                          <div className="aspect-w-16 aspect-h-9 rounded-xl">
+                            <iframe className="rounded-t-xl" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div> 
+                        <div className="py-5 px-7">
+                          <div className="flex-row justify-between items-center space-y-3">
+                            <div className="">
+                              <h2 className="font-bold text-xl leading-tight">Inovasi Teknologi Terapan Di Bidang Karantina Hewan dan Tumbuhan</h2>
+                            </div>
+                            <div className="">
+                              <p className="font-medium">01/12/2022</p>
+                            </div>
+                            <p className="text-sm">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+                            <div className="pt-2">
+                              <button className="bg-green-primary px-6 py-2 rounded-full text-white font-semibold text-sm">Lihat Video</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-xl drop-shadow-xl">
+                      <div className="">
+                        <div className="rounded-xl">
+                          <div className="aspect-w-16 aspect-h-9 rounded-xl">
+                            <iframe className="rounded-t-xl" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div> 
+                        <div className="py-5 px-7">
+                          <div className="flex-row justify-between items-center space-y-3">
+                            <div className="">
+                              <h2 className="font-bold text-xl leading-tight">Inovasi Teknologi Terapan Di Bidang Karantina Hewan dan Tumbuhan</h2>
+                            </div>
+                            <div className="">
+                              <p className="font-medium">01/12/2022</p>
+                            </div>
+                            <p className="text-sm">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+                            <div className="pt-2">
+                              <button className="bg-green-primary px-6 py-2 rounded-full text-white font-semibold text-sm">Lihat Video</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="bg-white rounded-xl drop-shadow-xl">
+                      <div className="">
+                        <div className="rounded-xl">
+                          <div className="aspect-w-16 aspect-h-9 rounded-xl">
+                            <iframe className="rounded-t-xl" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                          </div>
+                        </div> 
+                        <div className="py-5 px-7">
+                          <div className="flex-row justify-between items-center space-y-3">
+                            <div className="">
+                              <h2 className="font-bold text-xl leading-tight">Inovasi Teknologi Terapan Di Bidang Karantina Hewan dan Tumbuhan</h2>
+                            </div>
+                            <div className="">
+                              <p className="font-medium">01/12/2022</p>
+                            </div>
+                            <p className="text-sm">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
+                            <div className="pt-2">
+                              <button className="bg-green-primary px-6 py-2 rounded-full text-white font-semibold text-sm">Lihat Video</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* End Section 8 */}
     </div>
   );
 }
