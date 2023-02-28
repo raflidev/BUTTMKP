@@ -8,6 +8,7 @@ import people from "./images/people.png"
 
 // section 4
 import ilustrasi1 from "./images/ilustrasi/1.png";
+import bgf from "./images/ilustrasi/bgf.png";
 
 
 // section 5
@@ -241,11 +242,11 @@ function App() {
           </div>
 
           <div className="">
-            <div className="grid grid-cols-4 gap-10 pt-8">
+            <div className="grid grid-cols-4 gap-14 pt-8">
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -257,7 +258,7 @@ function App() {
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -269,7 +270,7 @@ function App() {
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -281,7 +282,7 @@ function App() {
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -293,7 +294,7 @@ function App() {
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -305,7 +306,7 @@ function App() {
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -317,7 +318,7 @@ function App() {
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -329,7 +330,7 @@ function App() {
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
                       <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
                     </svg>
                   </div>
@@ -346,13 +347,13 @@ function App() {
 
       {/* Section 4 */}
       <div className="px-20">
-        <div className="relative bg-green-primary rounded-xl">
+        <div className="relative bg-green-primary rounded-xl bg-cover" style={{ backgroundImage: `url(${bgf})` }}>
         <div className="flex">
           <div className="rounded-full">
             <div className="absolute bottom-0 w-[17rem] h-[17rem] bg-yellow-400 rounded-t-full  rounded-br-full"></div>
             <img className=" relative z-10 -mt-16 -ml-10" src={ilustrasi1} alt="" />
           </div>
-          <div className="w-4/6 text-white  flex items-center">
+          <div className="w-4/6 text-white flex items-center">
             <div className="space-y-4">
               <div className="font-bold text-5xl">Laporkan!</div>
               <div className="font-semibold">Sistem Pengendalian Pemerintah (SPIP) & Sistem Informasi Pelayanan Publik (SIPP)</div>
@@ -404,7 +405,7 @@ function App() {
       {/* End Section 5 */}
 
       {/* Section 6 */}
-      <div className="bg-green-primary">
+      <div className="bg-green-primary" style={{ backgroundImage: `url(${bgf})` }}>
         <div className="px-20 py-20">
           <div className="flex justify-center">
             <div className="w-5/6">
@@ -476,9 +477,9 @@ function App() {
               </div>
               <div className="pt-10">
                 <div className="grid grid-cols-3 gap-8">
-                  <div className=" col-span-3">
+                  <div className="col-span-3">
                     <div>
-                      <img src={berita1} alt="" />
+                      <img src={berita1} className="w-full" alt="" />
                       <div>
                         <div className="flex justify-between items-center">
                           <div className="w-5/6">
@@ -671,7 +672,7 @@ function App() {
       {/* End section 9 */}
 
       {/* Section 10 */}
-      <div className="bg-green-primary">
+      <div className="bg-green-primary bg-cover" style={{ backgroundImage: `url(${bgf})` }}>
         <div className="px-16 2xl:px-10 py-20 flex justify-evenly text-white">
           <div className="w-4/12 text-sm">
             <div className="">
