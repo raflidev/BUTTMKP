@@ -8,12 +8,12 @@ function Pagination({totalPages, postPerPage, setCurrentPage, currentPage}) {
   }
   return (
     <div className='flex space-x-3'>
-      <button className='bg-white rounded-full px-1' onClick={() => currentPage > 1 ? setCurrentPage(currentPage-1) : ''}>
+      <button className='bg-gray-100 rounded-full px-1' onClick={() => currentPage > 1 ? setCurrentPage(currentPage-1) : ''}>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-primary px-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
-      <div className=' rounded-full bg-white'>
+      <div className=' rounded-full bg-gray-100'>
         {
           pages.map((page) => {
             return (
@@ -22,7 +22,7 @@ function Pagination({totalPages, postPerPage, setCurrentPage, currentPage}) {
           })
         }
       </div>
-      <button className='bg-white rounded-full px-1' onClick={() => currentPage < pages.length ? setCurrentPage(currentPage+1) : ''}>
+      <button className='bg-gray-100 rounded-full px-1' onClick={() => currentPage < pages.length ? setCurrentPage(currentPage+1) : ''}>
         <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-primary px-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
