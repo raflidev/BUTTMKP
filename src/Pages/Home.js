@@ -16,10 +16,6 @@ import cimb from "../images/bank/cimb.png";
 import maybank from "../images/bank/maybank.png";
 
 
-// section 7
-import berita1 from "../images/berita1.png";
-import berita2 from "../images/berita2.png";
-
 // section 10
 import wa from "../images/icons/wa.svg"
 import indonesia2 from "../images/icons/indonesia2.png";
@@ -185,7 +181,7 @@ function Home() {
             <div className=" mt-4">
               <div className="space-y-3">
                 <div className="aspect-w-16 aspect-h-3 rounded-lg">
-                  <iframe title="2" className="rounded-lg" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                  <iframe title="2" className="rounded-lg" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
                 <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
@@ -450,7 +446,7 @@ function Home() {
                 <div>
                   <div className="flex space-x-2 items-center">
                     <div>
-                      <img src={wa} alt="" srcset="" />
+                      <img src={wa} alt="" srcSet="" />
                     </div>
                     <p>092138823921212121</p>
                   </div>

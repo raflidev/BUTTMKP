@@ -1,5 +1,4 @@
 import React from 'react'
-import bgf from "../images/ilustrasi/bgf.png";
 
 // section 6
 import cover1 from "../images/cover1.png";
@@ -101,7 +100,7 @@ const data = [
 function BeritaHarian() {
   // make pagination from data
   const [currentPage, setCurrentPage] = React.useState(1);
-  const [postsPerPage] = React.useState(3);
+  const [postsPerPage] = React.useState(4);
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
@@ -124,17 +123,17 @@ function BeritaHarian() {
                 {
                     currentPosts.map((item, index) => {
                       console.log('====================================');
-                      console.log(indexOfFirstPost === index);
+                      console.log(index === 0);
                       console.log('====================================');
                     return (
-                      <div className={`"${indexOfFirstPost === index ? 'col-span-3' : ''}"`} key={item.id}>
+                      <div className={`${index === 0 ? 'col-span-3' : ''}`} key={index}>
                         <div>
                           <div className='h-[20rem] w-full bg-cover' style={{backgroundImage: `url(${item.image})`}}>
                           </div>
                           <div>
                             <div className="flex justify-between items-center">
                               <div className="w-5/6">
-                                <h2 className="font-bold text-xl">Penilaian Pembangunan Zona Integritas Menuju Wilayah Bebas dari Korupsi (WBK) dan Wilayah Birokrasi Bersih Melayani (WBBM) di lingkungan Kementrian Pertanian</h2>
+                                <h2 className="font-bold text-xl">{item.title}</h2>
                               </div>
                               <div className="w-1/6 text-right">
                                 <p className="font-bold">01/12/2022</p>

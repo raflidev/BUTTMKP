@@ -1,5 +1,4 @@
 import React from 'react'
-import bgf from "../images/ilustrasi/bgf.png";
 
 // section 6
 import cover1 from "../images/cover1.png";
@@ -124,13 +123,13 @@ function VideoBerita() {
                 <div className="pt-8">
                   <div className="grid grid-cols-3 gap-8">
                   {
-                    currentPosts.map((item) => {
+                    currentPosts.map((item, index) => {
                     return (
-                      <div key={item.id} className="bg-white rounded-xl drop-shadow-xl">
+                      <div key={index} className="bg-white rounded-xl drop-shadow-xl">
                       <div className="">
                         <div className="rounded-xl">
                           <div className="aspect-w-16 aspect-h-9 rounded-xl">
-                            <iframe title="1" className="rounded-t-xl" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <iframe title="1" className="rounded-t-xl" src="https://www.youtube.com/embed/D0UnqGm_miA?controls=0" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                           </div>
                         </div> 
                         <div className="py-5 px-7">
