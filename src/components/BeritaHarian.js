@@ -122,9 +122,6 @@ function BeritaHarian() {
                 <div className="grid grid-cols-3 gap-8">
                 {
                     currentPosts.map((item, index) => {
-                      console.log('====================================');
-                      console.log(index === 0);
-                      console.log('====================================');
                     return (
                       <div className={`${index === 0 ? 'col-span-3' : ''}`} key={index}>
                         <div>
