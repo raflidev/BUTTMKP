@@ -1,4 +1,6 @@
+
 import React from 'react'
+import { Link } from 'react-router-dom';
 import indonesia from "../images/icons/indonesia.png";
 import search from "../images/icons/search.png";
 import logo from "../images/logo.png";
@@ -15,18 +17,18 @@ function Navbar() {
                 <div className="font-bold">BUTTMKP</div>
               </div>
               <div className="flex space-x-2 lg:space-x-2 xl:space-x-2 2xl:space-x-7 items-center font-medium">
-                <div className="text-green-primary font-bold">Beranda</div>
+                <Link to="/" className="text-green-primary font-bold">Beranda</Link>
                 <div className="group flex items-center space-x-2 relative">
                   <div>Tentang Kami</div>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                   </svg>
                   <div className='hidden absolute top-6  flex-col w-52 group-hover:flex bg-white rounded border border-black'>
-                    <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Profil</div>
-                    <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Visi & Misi</div>
-                    <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Struktur Organisasi</div>
-                    <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Tugas & Fungsi</div>
-                    <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Pelayanan Publik</div>
+                    <Link to="/profil" className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Profil</Link>
+                    <Link to="/visimisi" className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Visi & Misi</Link>
+                    <Link to="/stukturorganisasi" className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Struktur Organisasi</Link>
+                    <Link to="/tugasfungsi" className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Tugas & Fungsi</Link>
+                    <Link to="/pelayananpublik" className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Pelayanan Publik</Link>
                   </div>
                 </div>
                 <div className="group relative flex items-center space-x-2">
@@ -35,8 +37,8 @@ function Navbar() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                   </svg>
                   <div className='hidden absolute top-6  flex-col w-52 group-hover:flex bg-white rounded border border-black'>
-                    <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Uji Terap</div>
-                    <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Bimbingan Teknis</div>
+                    <Link to="/ujiterap" className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Uji Terap</Link>
+                    <Link to="/bimbinganteknis" className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Bimbingan Teknis</Link>
                     <div className='hover:bg-gray-300 px-4 py-2 cursor-pointer'>Fasilitas</div>
                   </div>
                 </div>
@@ -57,13 +59,6 @@ function Navbar() {
                     <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
                   </svg>
                 </div>
-                <div className="flex items-center space-x-2">
-                  <div>Informasi</div>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-3 h-3">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
-                  </svg>
-                </div>
-                <div>Kontak Kami</div>
               </div>
               <div className="flex items-center space-x-3">
                 <img src={indonesia} alt="" />
