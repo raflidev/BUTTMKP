@@ -4,9 +4,13 @@ import {
   Route,
 } from "react-router-dom";
 import BimbinganTeknis from "./Pages/BimbinganTeknis";
+import Fasilitas from "./Pages/Fasilitas";
 import Home from "./Pages/Home";
+import Laporan from "./Pages/Laporan";
 import PelayananPublik from "./Pages/PelayananPublik";
 import Profile from "./Pages/Profile"
+import RealisasiAnggaran from "./Pages/RealisasiAnggaran";
+import RencanaStrategis from "./Pages/RencanaStrategis";
 import StukturOrganisasi from "./Pages/StukturOrganisasi";
 import TugasDanFungsi from "./Pages/TugasDanFungsi";
 import UjiTerap from "./Pages/UjiTerap";
@@ -24,6 +28,10 @@ function App() {
         <Route path="/pelayananpublik" element={<PelayananPublik />} />
         <Route path="/ujiterap" element={<UjiTerap />} />
         <Route path="/bimbinganteknis" element={<BimbinganTeknis />} />
+        <Route path="/fasilitas" element={<Fasilitas />} />
+        <Route path="/laporan" element={<Laporan />} />
+        <Route path="/rencanastrategis" element={<RencanaStrategis />} />
+        <Route path="/realisasianggaran" element={<RealisasiAnggaran />} />
       </Routes>
     </BrowserRouter>
   );
