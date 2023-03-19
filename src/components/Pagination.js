@@ -8,8 +8,8 @@ function Pagination({totalPages, postPerPage, setCurrentPage, currentPage}) {
   }
   return (
     <div className='flex space-x-3'>
-      <button className='bg-gray-100 rounded-full px-1' onClick={() => currentPage > 1 ? setCurrentPage(currentPage-1) : ''}>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-primary px-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <button className='bg-gray-100 hover:bg-green-600 rounded-full px-1' onClick={() => currentPage > 1 ? setCurrentPage(currentPage-1) : ''}>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-primary hover:text-black px-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
         </svg>
       </button>
@@ -17,13 +17,13 @@ function Pagination({totalPages, postPerPage, setCurrentPage, currentPage}) {
         {
           pages.map((page) => {
             return (
-              <button key={page} onClick={() => setCurrentPage(page)} className={`py-1 px-3 ${page === currentPage ? 'px-5 bg-green-primary rounded-full text-white' : ''}`}>{page}</button>
+              <button key={page} onClick={() => setCurrentPage(page)} className={`py-1 px-3 ${page === currentPage ? 'px-5 bg-green-primary hover:bg-green-600 rounded-full text-white' : 'hover:bg-green-600 rounded-full hover:text-white'}`}>{page}</button>
             )
           })
         }
       </div>
-      <button className='bg-gray-100 rounded-full px-1' onClick={() => currentPage < pages.length ? setCurrentPage(currentPage+1) : ''}>
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-primary px-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <button className='bg-gray-100 hover:bg-green-600 rounded-full px-1' onClick={() => currentPage < pages.length ? setCurrentPage(currentPage+1) : ''}>
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 text-green-primary hover:text-black px-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
         </svg>
       </button>

@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/Footer'
 import HeaderHal from '../components/HeaderHal'
 import Kontak from '../components/Kontak'
 import Navbar from '../components/Navbar'
@@ -32,6 +33,7 @@ function RealisasiAnggaran() {
                 </ul>
             </p>
     </div>
+    <Footer/>
   
 </div>
   )

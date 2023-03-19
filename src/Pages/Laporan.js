@@ -47,7 +47,7 @@ function Laporan() {
                 data.map((item, index) => {
                 return (
                     <div key={index}>
-                    <button onClick={() => setActive(item.id-1)} className={`${data[active].nama === item.nama ? ' text-green-primary bg-green-100 border border-b-green-primary' : 'text-gray-400 border border-b-gray-400' }  w-full  px-3 py-3 font-bold  border-transparent`}>
+                    <button onClick={() => setActive(item.id-1)} className={`${data[active].nama === item.nama ? ' text-green-primary bg-green-100 border border-b-green-primary' : 'text-gray-400 border border-b-gray-400' } hover:bg-green-100 hover:text-green-primary  w-full  px-3 py-3 font-bold  border-transparent`}>
                         {item.nama}
                     </button>
                     </div>

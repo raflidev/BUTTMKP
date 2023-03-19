@@ -1,4 +1,5 @@
 // import logo from "../images/logo.png";
+import FeatherIcon from 'feather-icons-react';
 
 // section 1
 import people from "../images/people.png"
@@ -61,35 +62,35 @@ const data = [
         status: 'Sudah Selesai',
     },
     {
-        id: 1,
+        id: 2,
         name: 'Makan Makan 2',
         desc: 'test123123',
         date: '13 Juli 2022',
         status: 'Sudah Selesai',
     },
     {
-        id: 1,
+        id: 3,
         name: 'Makan Makan 3',
         desc: 'test123123',
         date: '20 Februari 2022',
         status: 'Sudah Selesai',
     },
     {
-        id: 1,
+        id: 4,
         name: 'Makan Makan 4',
         desc: 'test123123',
         date: '14 Juli 2022',
         status: 'Sudah Selesai',
     },
     {
-        id: 1,
+        id: 5,
         name: 'Makan Makan 5',
         desc: 'test123123',
         date: '15 Juni 2022',
         status: 'Sudah Selesai',
     },
     {
-        id: 1,
+        id: 6,
         name: 'Makan Makan 6',
         desc: 'test123123',
         date: '14 Mei 2022',
@@ -97,8 +98,24 @@ const data = [
     },
 ]
 
+const inovasi = [
+  {
+    id: 1,
+    tipe: 'Eksternal',
+    layanan: [anz, btn, cimb, maybank]
+  },
+  {
+    id: 2,
+    tipe: 'Internal',
+    layanan: [anz, maybank]
+  }
+]
+
 function Home() {
+  
+
   const [more, setMore] = useState(false);
+  const [inovasilayanan, setInovasiLayanan] = useState(inovasi[0]);
 
   const handleMore = () => {
     setMore(!more);
@@ -127,13 +144,13 @@ function Home() {
               Balai Uji Terap Teknik dan Metode Karantina Pertanian (BUTTMKP) siap untuk melakukan langkah perubahan. Berkomitmen pada level pimpinan, pembangunan zona integritas untuk seluruh pegawai.
               </div>
               <div className="flex space-x-5 pt-10">
-                <button className="bg-white flex space-x-2 items-center text-green-primary rounded-full px-5 py-2 font-bold">
+                <button className="bg-white border hover:border-white hover:bg-transparent hover:text-white duration-300 flex space-x-2 items-center text-green-primary rounded-full px-5 py-2 font-bold">
                   <div>Daftar Karantina</div>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
                 </button>
-                <button className="text-white border border-white flex space-x-2 items-center bg-green-primary rounded-full px-5 py-2 font-bold">
+                <button className="text-white border border-white flex space-x-2 items-center hover:bg-green-600 duration-300 bg-green-primary rounded-full px-5 py-2 font-bold">
                   <div>Info Selengkapnya</div>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
@@ -166,7 +183,7 @@ function Home() {
                 </div>
                 <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                <button className="flex space-x-2 items-center px-5 py-3 bg-green-primary text-sm rounded-full font-semibold text-white">
+                <button className="flex space-x-2 items-center px-5 py-3 bg-green-primary hover:bg-green-600 duration-300 text-sm rounded-full font-semibold text-white">
                 <span>
                   Lebih Detail
                 </span>
@@ -193,104 +210,88 @@ function Home() {
           <div className="relative">
             <div className={`bg-gradient-to-t from-white top-0 w-full h-full ${more ? 'hidden' : 'absolute'}`}>
               <div className="flex justify-center">
-                <button className="bg-yellow-400 py-2 px-4 rounded-lg font-semibold absolute bottom-10" onClick={handleMore}>Lihat Lebih Banyak</button>
+                <button className="bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-lg font-semibold absolute bottom-10" onClick={handleMore}>Lihat Lebih Banyak</button>
               </div>
             </div>
             <div className="grid grid-cols-4 gap-14 pt-8">
               <div className="z-10">
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="repeat" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
               <div className="z-10">
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="clipboard" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
               <div className="z-10">
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="radio" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
               <div className="z-10">
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="book-open" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="repeat" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="battery-charging" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="battery-charging" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
               <div>
                 <div className="space-y-3">
                   <div>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-16 h-16 text-green-primary">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
-                    </svg>
+                    <FeatherIcon icon="battery-charging" className="w-16 h-16 text-green-primary" />
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white">Lebih Detail</button>
+                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
                 </div>
               </div>
             </div>
@@ -336,15 +337,20 @@ function Home() {
             <div className="text-green-primary font-bold text-4xl">Inovasi Layanan</div>
             <div className="mx-auto h-1 w-16 bg-yellow-400"></div>
             <div className="space-x-6">
-              <button className="font-medium text-white rounded-full px-8 py-2 bg-green-primary">Eksternal</button>
-              <button className="font-medium rounded-full px-8 py-2 border border-green-primary">Internal</button>
+              {
+                inovasi.map((item, index) => (
+                  <button key={index} onClick={() => setInovasiLayanan(inovasi[item.id-1])} className={`${item.tipe === inovasilayanan.tipe ? 'bg-green-primary text-white' : '' } duration-300 hover:bg-green-600 hover:border-green-600 hover:text-white font-medium rounded-full px-8 py-2 border border-green-primary`}>{item.tipe}</button>
+                ))
+              }
+              {/* <button className="font-medium rounded-full px-8 py-2 border border-green-primary">Internal</button> */}
             </div>
             <div>
-              <div className="grid grid-cols-4 gap-8">
-                <img src={anz} alt="bank anz" />
-                <img src={btn} alt="bank btn" />
-                <img src={cimb} alt="bank cimb" />
-                <img src={maybank} alt="bank maybank" />
+              <div className="grid grid-cols-4 gap-8 content-center">
+                {
+                  inovasilayanan.layanan.map((item, index) => (
+                    <img src={item} key={index} className="duration-300" alt="bank" />
+                  ))
+                }
               </div>
             </div>
           </div>
