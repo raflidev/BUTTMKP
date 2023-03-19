@@ -4,6 +4,7 @@ import bgf from "../images/ilustrasi/bgf.png";
 // section 6
 import cover1 from "../images/cover1.png";
 import Pagination from './Pagination';
+import { Link } from 'react-router-dom';
 
 const data = [
   {
@@ -134,7 +135,11 @@ function KaryaTulis() {
                               {item.title}
                             </div>
                             <div className="text-sm w-5/6 mx-auto">{item.desc}</div>
-                            <button className="bg-green-primary hover:bg-green-600 px-7 py-2 rounded-full text-white font-semibold">Baca Karya Tulis</button>
+                            <Link to="/detail" className='inline-block'>
+                              <div className="bg-green-primary hover:bg-green-600 px-7 py-2 rounded-full text-white font-semibold">
+                                Baca Karya Tulis
+                              </div>
+                            </Link>
                           </div>
                         </div>
                       </div>
@@ -145,7 +150,7 @@ function KaryaTulis() {
                   </div>
                   <div className='flex justify-between mt-10 items-center'>
                     <div>
-                      <button className="bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-lg font-semibold bottom-10" >Lihat Lebih Banyak</button>
+                      <Link to="/detailcard" className="bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-lg font-semibold bottom-10" >Lihat Lebih Banyak</Link>
                     </div>
                     <div>
                       <Pagination totalPages={data.length} postPerPage={postsPerPage} setCurrentPage={setCurrentPage} currentPage={currentPage} />

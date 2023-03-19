@@ -4,6 +4,8 @@ import {
   Route,
 } from "react-router-dom";
 import BimbinganTeknis from "./Pages/BimbinganTeknis";
+import Detail from "./Pages/Detail";
+import DetailCard from "./Pages/DetailCard";
 import Fasilitas from "./Pages/Fasilitas";
 import Home from "./Pages/Home";
 import Laporan from "./Pages/Laporan";
@@ -32,6 +34,9 @@ function App() {
         <Route path="/laporan" element={<Laporan />} />
         <Route path="/rencanastrategis" element={<RencanaStrategis />} />
         <Route path="/realisasianggaran" element={<RealisasiAnggaran />} />
+
+        <Route path="/detail" element={<Detail/>} />
+        <Route path="/detailcard" element={<DetailCard/>} />
       </Routes>
     </BrowserRouter>
   );

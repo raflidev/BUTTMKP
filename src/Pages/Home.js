@@ -29,6 +29,7 @@ import BeritaHarian from "../components/BeritaHarian";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Kontak from "../components/Kontak";
+import { Link } from 'react-router-dom';
 
 const columns = [
     {
@@ -144,18 +145,18 @@ function Home() {
               Balai Uji Terap Teknik dan Metode Karantina Pertanian (BUTTMKP) siap untuk melakukan langkah perubahan. Berkomitmen pada level pimpinan, pembangunan zona integritas untuk seluruh pegawai.
               </div>
               <div className="flex space-x-5 pt-10">
-                <button className="bg-white border hover:border-white hover:bg-transparent hover:text-white duration-300 flex space-x-2 items-center text-green-primary rounded-full px-5 py-2 font-bold">
+                <Link to="/detail" className="bg-white border hover:border-white hover:bg-transparent hover:text-white duration-300 flex space-x-2 items-center text-green-primary rounded-full px-5 py-2 font-bold">
                   <div>Daftar Karantina</div>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
-                </button>
-                <button className="text-white border border-white flex space-x-2 items-center hover:bg-green-600 duration-300 bg-green-primary rounded-full px-5 py-2 font-bold">
+                </Link>
+                <Link to="/detail" className="text-white border border-white flex space-x-2 items-center hover:bg-green-600 duration-300 bg-green-primary rounded-full px-5 py-2 font-bold">
                   <div>Info Selengkapnya</div>
                   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
                   </svg>
-                </button>
+                </Link>
               </div>
           </div>
           <div className="relative w-2/6">
@@ -183,14 +184,16 @@ function Home() {
                 </div>
                 <p className="">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-                <button className="flex space-x-2 items-center px-5 py-3 bg-green-primary hover:bg-green-600 duration-300 text-sm rounded-full font-semibold text-white">
-                <span>
-                  Lebih Detail
-                </span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
-                  </svg>
-                </button>
+                <Link to="/detail" className='inline-block'>
+                  <div className="flex space-x-2 items-center px-5 py-3 bg-green-primary hover:bg-green-600 duration-300 text-sm rounded-full font-semibold text-white">
+                    <span>
+                      Lebih Detail
+                    </span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-4 h-4">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+                    </svg>
+                  </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -221,7 +224,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
               <div className="z-10">
@@ -231,7 +234,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
               <div className="z-10">
@@ -241,7 +244,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
               <div className="z-10">
@@ -251,7 +254,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
               <div>
@@ -261,7 +264,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
               <div>
@@ -271,7 +274,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
               <div>
@@ -281,7 +284,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
               <div>
@@ -291,7 +294,7 @@ function Home() {
                   </div>
                   <div className="font-bold text-xl">Alur Layanan Karantina</div>
                   <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et quidem, tenetur omnis corrupti </div>
-                  <button className="px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</button>
+                  <Link to="/detail" className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300">Lebih Detail</Link>
                 </div>
               </div>
             </div>

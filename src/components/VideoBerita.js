@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 // section 6
 import cover1 from "../images/cover1.png";
@@ -142,7 +143,7 @@ function VideoBerita() {
                             </div>
                             <p className="text-sm">cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, </p>
                             <div className="pt-2">
-                              <button className="bg-green-primary hover:bg-green-600 px-6 py-2 rounded-full text-white font-semibold text-sm">Lihat Video</button>
+                              <Link to="/detail" className="inline-block bg-green-primary hover:bg-green-600 px-6 py-2 rounded-full text-white font-semibold text-sm">Lihat Video</Link>
                             </div>
                           </div>
                         </div>
@@ -154,7 +155,7 @@ function VideoBerita() {
                   </div>
                   <div className='flex justify-between mt-10 items-center'>
                     <div>
-                      <button className="bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-lg font-semibold bottom-10" >Lihat Lebih Banyak</button>
+                      <Link to="/detailcard" className="bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-lg font-semibold bottom-10" >Lihat Lebih Banyak</Link>
                     </div>
                     <div>
                       <Pagination totalPages={data.length} postPerPage={postsPerPage} setCurrentPage={setCurrentPage} currentPage={currentPage} />
