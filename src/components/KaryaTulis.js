@@ -1,28 +1,31 @@
-import React from 'react'
+import React from "react";
 import bgf from "../images/ilustrasi/bgf.png";
 
 // section 6
 import cover1 from "../images/cover1.png";
-import Pagination from './Pagination';
-import { Link } from 'react-router-dom';
+import Pagination from "./Pagination";
+import { Link } from "react-router-dom";
 
 const data = [
   {
     id: 1,
-    title: "APenanaman Pupuk Menggunakan Metodelogi Hidroponik",
-    desc: "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ",
+    title:
+      "Development of Spectral Sensors for Nitrite Content in Edible Bird’s Nest",
+    desc: "Rida Hudaya, Lylia Syamsi Wawan Sutian Mazdani Ulfah Daulay Alli Nur Magribi Dodi Budiman Margana Ika Suharti Surati Y.C. Eko Suharno Hajar Cahya Utami Hanif Nurdiansyah Siti Rakhma Apriana Martin",
     image: cover1,
   },
   {
     id: 1,
-    title: "BPenanaman Pupuk Menggunakan Metodelogi Hidroponik",
-    desc: "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ",
+    title:
+      "Effects of Freezing Time on Degradation of Durian (Durio Zibethinus Murr.) Fruit’s Attributes During the Frozen Storage",
+    desc: "Hendra Adi Prasetia, Slamet Budiawan, Ade Syahputra, Retno Umiarsih, Rifena Pangastuweni, Mutia Riefka Fauzidanty, Idham Sakti Harahap...",
     image: cover1,
   },
   {
     id: 1,
-    title: "CPenanaman Pupuk Menggunakan Metodelogi Hidroponik",
-    desc: "cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, ",
+    title:
+      "The role of hot water treatment and chitosan coating in controlling a latent infection of Colletotrichum musae on banana var. Mas kirana",
+    desc: "Hendra Adi Prasetia , Leny Panjaitan , Salbiah , Widodo , Dondy Anggono Setiabudi Applied Research Institute of Agricultural Quarantine...",
     image: cover1,
   },
   {
@@ -108,52 +111,69 @@ function KaryaTulis() {
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = data.slice(indexOfFirstPost, indexOfLastPost);
 
-
-
   return (
     <div>
-      <div className="bg-green-primary" style={{ backgroundImage: `url(${bgf})` }}>
+      <div
+        className="bg-green-primary"
+        style={{ backgroundImage: `url(${bgf})` }}
+      >
         <div className="px-20 py-20">
           <div className="flex justify-center">
             <div className="w-5/6">
               <div className="text-center">
                 <div className="space-y-2">
-                  <div className="text-yellow-400 font-semibold">Karya Tulis Ilmiah</div>
-                  <div className="font-bold text-white text-3xl pb-5">Beragam Karya Tulis Ilmiah</div>
+                  <div className="text-yellow-400 font-semibold">
+                    Karya Tulis Ilmiah
+                  </div>
+                  <div className="font-bold text-white text-3xl pb-5">
+                    Beragam Karya Tulis Ilmiah
+                  </div>
                   <div className="mx-auto h-1 w-16 bg-yellow-400"></div>
                 </div>
                 <div className="pt-10">
                   <div className="grid grid-cols-3 gap-10">
-                  {
-                    currentPosts.map((item, index) => {
-                    return (
-                      <div key={index} className="bg-white rounded-xl drop-shadow-xl">
-                        <div className="text-center">
-                          <img src={item.image} className="w-full" alt="" />
-                          <div className="py-4 space-y-4">
-                            <div className="font-bold text-lg w-5/6 mx-auto">
-                              {item.title}
-                            </div>
-                            <div className="text-sm w-5/6 mx-auto">{item.desc}</div>
-                            <Link to="/detail" className='inline-block'>
-                              <div className="bg-green-primary hover:bg-green-600 px-7 py-2 rounded-full text-white font-semibold">
-                                Baca Karya Tulis
+                    {currentPosts.map((item, index) => {
+                      return (
+                        <div
+                          key={index}
+                          className="bg-white rounded-xl drop-shadow-xl"
+                        >
+                          <div className="text-center">
+                            <img src={item.image} className="w-full" alt="" />
+                            <div className="py-4 space-y-4">
+                              <div className="font-bold text-lg w-5/6 mx-auto">
+                                {item.title}
                               </div>
-                            </Link>
+                              <div className="text-sm w-5/6 mx-auto">
+                                {item.desc}
+                              </div>
+                              <Link to="/detail" className="inline-block">
+                                <div className="bg-green-primary hover:bg-green-600 px-7 py-2 rounded-full text-white font-semibold">
+                                  Baca Karya Tulis
+                                </div>
+                              </Link>
+                            </div>
                           </div>
                         </div>
-                      </div>
-                    )
-                    }) 
-                  }
-                  
+                      );
+                    })}
                   </div>
-                  <div className='flex justify-between mt-10 items-center'>
+                  <div className="flex justify-between mt-10 items-center">
                     <div>
-                      <Link to="/detailcard" className="bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-lg font-semibold bottom-10" >Lihat Lebih Banyak</Link>
+                      <Link
+                        to="/detailcard"
+                        className="bg-yellow-400 hover:bg-yellow-500 py-2 px-4 rounded-lg font-semibold bottom-10"
+                      >
+                        Lihat Lebih Banyak
+                      </Link>
                     </div>
                     <div>
-                      <Pagination totalPages={data.length} postPerPage={postsPerPage} setCurrentPage={setCurrentPage} currentPage={currentPage} />
+                      <Pagination
+                        totalPages={data.length}
+                        postPerPage={postsPerPage}
+                        setCurrentPage={setCurrentPage}
+                        currentPage={currentPage}
+                      />
                     </div>
                   </div>
                 </div>
@@ -163,7 +183,7 @@ function KaryaTulis() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default KaryaTulis
+export default KaryaTulis;
