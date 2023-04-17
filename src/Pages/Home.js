@@ -142,7 +142,7 @@ function Home() {
             </div>
             <div className="flex space-x-5 pt-10">
               <Link
-                to="/detail"
+                to="/ujiterap"
                 className="bg-white border hover:border-white hover:bg-transparent hover:text-white duration-300 flex space-x-2 items-center text-green-primary rounded-full px-5 py-2 font-bold"
               >
                 <div>Daftar Karantina</div>
@@ -292,7 +292,7 @@ function Home() {
                   </div>
                   <div>Pemeriksaan dan pengujian barang impor/ekspor. </div>
                   <Link
-                    to="/detail"
+                    to="/ujiterap"
                     className="inline-block px-5 py-2 bg-green-primary rounded-full font-semibold text-white hover:bg-green-600 duration-300"
                   >
                     Lebih Detail
