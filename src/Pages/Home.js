@@ -14,6 +14,14 @@ import btn from "../images/bank/btn.png";
 import cimb from "../images/bank/cimb.png";
 import maybank from "../images/bank/maybank.png";
 
+import i1 from "../images/bank/1.png";
+import i2 from "../images/bank/2.png";
+import i3 from "../images/bank/3.png";
+import i4 from "../images/bank/4.png";
+import i5 from "../images/bank/5.png";
+import i6 from "../images/bank/6.png";
+import i7 from "../images/bank/7.png";
+
 // section 10
 
 import DataTable from "react-data-table-component";
@@ -98,12 +106,12 @@ const inovasi = [
   {
     id: 1,
     tipe: "Eksternal",
-    layanan: [anz, btn, cimb, maybank],
+    layanan: [i1, i2, i3, i4],
   },
   {
     id: 2,
     tipe: "Internal",
-    layanan: [anz, maybank],
+    layanan: [i5, i6, i7],
   },
 ];
 
@@ -323,7 +331,7 @@ function Home() {
                 <div className="space-y-3">
                   <div>
                     <FeatherIcon
-                      icon="radio"
+                      icon="users"
                       className="w-16 h-16 text-green-primary"
                     />
                   </div>
@@ -345,7 +353,7 @@ function Home() {
                 <div className="space-y-3">
                   <div>
                     <FeatherIcon
-                      icon="book-open"
+                      icon="clock"
                       className="w-16 h-16 text-green-primary"
                     />
                   </div>
@@ -365,7 +373,7 @@ function Home() {
                 <div className="space-y-3">
                   <div>
                     <FeatherIcon
-                      icon="repeat"
+                      icon="map-pin"
                       className="w-16 h-16 text-green-primary"
                     />
                   </div>
@@ -385,7 +393,7 @@ function Home() {
                 <div className="space-y-3">
                   <div>
                     <FeatherIcon
-                      icon="battery-charging"
+                      icon="book"
                       className="w-16 h-16 text-green-primary"
                     />
                   </div>
@@ -407,7 +415,7 @@ function Home() {
                 <div className="space-y-3">
                   <div>
                     <FeatherIcon
-                      icon="battery-charging"
+                      icon="message-circle"
                       className="w-16 h-16 text-green-primary"
                     />
                   </div>
@@ -430,7 +438,7 @@ function Home() {
                 <div className="space-y-3">
                   <div>
                     <FeatherIcon
-                      icon="battery-charging"
+                      icon="briefcase"
                       className="w-16 h-16 text-green-primary"
                     />
                   </div>
