@@ -4,6 +4,16 @@ import indonesia2 from "../images/icons/indonesia2.png";
 import logo from "../images/logo.png";
 import bgf from "../images/ilustrasi/bgf.png";
 
+import b1 from "../images/negara/1.png";
+import b2 from "../images/negara/2.png";
+import b3 from "../images/negara/3.png";
+import b4 from "../images/negara/4.png";
+import b5 from "../images/negara/5.png";
+import b6 from "../images/negara/6.png";
+import b7 from "../images/negara/7.png";
+import b8 from "../images/negara/8.png";
+import b9 from "../images/negara/9.png";
+
 function Footer() {
   return (
     <div>
@@ -123,39 +133,39 @@ function Footer() {
             <div className="font-bold text-lg pb-4">Statistik Pengunjung</div>
             <div className="grid grid-cols-3 gap-3">
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b1} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b2} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b3} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b4} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b5} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b6} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b7} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b8} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
               <div className="flex space-x-3 items-center">
-                <img className="w-6 h-4" src={indonesia2} alt="" />
+                <img className="w-6 h-4" src={b9} alt="" />
                 <div>Visitor: 28.900</div>
               </div>
             </div>
